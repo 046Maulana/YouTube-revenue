@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="loading" id="loadingText">Loading...</div>
+
+<iframe 
+  src="https://script.google.com/a/macros/mhs.unesa.ac.id/s/AKfycbxPh6Z7Jms5Bm03D4LKe-8qzJ6zfzS_rkFe8UKm3Wibpo5V8RfNlGzHLnvUeVZ_dtZ1Ng/exec"
+  onload="document.getElementById('loadingText').style.display='none'">
+</iframe>
+
+</body>
+</html>
